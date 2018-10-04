@@ -39,7 +39,7 @@ The following shows the (rich) grammar for the `SELECT` statement in the query l
     SelectClause       ::= <SELECT> ( <ALL> | <DISTINCT> )? ( SelectRegular | SelectValue )
     SelectRegular      ::= Projection ( "," Projection )*
     SelectValue        ::= ( <VALUE> | <ELEMENT> | <RAW> ) Expression
-    Projection         ::= ( Expression ( <AS> )? Identifier | "*" )
+    Projection         ::= ( Expression ( <AS> )? Identifier | "*" | Identifier "." "*" )
 
     FromClause         ::= <FROM> FromTerm ( "," FromTerm )*
     FromTerm           ::= Expression (( <AS> )? Variable)?
@@ -393,6 +393,10 @@ Since both `u` and `m` are binding variables generated in the `FROM` clause, thi
         }
     } ]
 
+### <a id="Select_variable_star">SELECT _variable_.*</a>
+
+<!-- FIXME --> The notation `c.*` means “all the fields of the object bound to variable `c`”.
+(Of course, this works only if `c` is bound to an object.)
 
 ### <a id="Select_distinct">SELECT DISTINCT</a>
 The `DISTINCT` keyword is used to eliminate duplicate items in results. The following example shows how it works.
