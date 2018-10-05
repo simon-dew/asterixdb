@@ -666,7 +666,7 @@ More information on implicit binding variables can be found in the appendix sect
 The join clause in the query language supports both inner joins and left outer joins from standard SQL.
 
 ### <a id="Inner_joins">Inner joins</a>
-Using a `JOIN` clause, the inner join intent from the preceeding examples can also be expressed as follows:
+Using a `JOIN` clause, the inner join intent from the preceding examples can also be expressed as follows:
 
 ##### Example
 
