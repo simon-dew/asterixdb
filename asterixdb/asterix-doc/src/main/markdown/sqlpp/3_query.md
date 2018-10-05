@@ -395,8 +395,82 @@ Since both `u` and `m` are binding variables generated in the `FROM` clause, thi
 
 ### <a id="Select_variable_star">SELECT _variable_.*</a>
 
-<!-- FIXME --> The notation `c.*` means “all the fields of the object bound to variable `c`”.
-(Of course, this works only if `c` is bound to an object.)
+Whereas `SELECT *` returns all the fields bound to all the variables which are currently defined,
+the notation `SELECT c.*` returns all the fields of the object bound to variable `c`.
+The variable `c` must be bound to an object for this to work.
+
+##### Example
+
+    SELECT user.*
+    FROM GleambookUsers user;
+
+Compare this query with the first example given under [SELECT *](#Select_star).
+This query returns all users from the `GleambookUsers` dataset,
+but the `user` variable name is omitted from the results:
+
+    [
+      {
+        "id": 1,
+        "alias": "Margarita",
+        "name": "MargaritaStoddard",
+        "nickname": "Mags",
+        "userSince": "2012-08-20T10:10:00",
+        "friendIds": [
+          2,
+          3,
+          6,
+          10
+        ],
+        "employment": [
+          {
+            "organizationName": "Codetechno",
+            "start-date": "2006-08-06"
+          },
+          {
+            "organizationName": "geomedia",
+            "start-date": "2010-06-17",
+            "end-date": "2010-01-26"
+          }
+        ],
+        "gender": "F"
+      },
+      {
+        "id": 2,
+        "alias": "Isbel",
+        "name": "IsbelDull",
+        "nickname": "Izzy",
+        "userSince": "2011-01-22T10:10:00",
+        "friendIds": [
+          1,
+          4
+        ],
+        "employment": [
+          {
+            "organizationName": "Hexviafind",
+            "startDate": "2010-04-27"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "alias": "Emory",
+        "name": "EmoryUnk",
+        "userSince": "2012-07-10T10:10:00",
+        "friendIds": [
+          1,
+          5,
+          8,
+          9
+        ],
+        "employment": [
+          {
+            "organizationName": "geomedia",
+            "startDate": "2010-06-17",
+            "endDate": "2010-01-26"
+          }
+        ]
+      }
+    ]
 
 ### <a id="Select_distinct">SELECT DISTINCT</a>
 The `DISTINCT` keyword is used to eliminate duplicate items in results. The following example shows how it works.
