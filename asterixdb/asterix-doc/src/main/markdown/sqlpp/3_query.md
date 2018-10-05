@@ -720,6 +720,22 @@ The left-outer join query can also be expressed using `LEFT OUTER UNNEST`:
 
 In general, SQL-style join queries can also be expressed by `UNNEST` clauses and left outer join queries can be expressed by `LEFT OUTER UNNESTs`.
 
+### <a id="Join_variable_scope">Variable scope in JOIN clauses</a>
+
+Variables defined by `JOIN` subclauses are not visible to other subclauses in the same `FROM` clause.
+This also applies to the `FROM` variable that starts the `JOIN` subclause.
+
+##### Example
+
+    SELECT * FROM GleambookUsers u
+    JOIN (SELECT VALUE m
+          FROM GleambookMessages m
+          WHERE m.authorId = u.id) m
+    ON u.id = m.authorId;
+
+The variable `u` defined by the `FROM` clause is not visible inside the `JOIN` subclause,
+so this query returns no results.
+
 ## <a id="Group_By_clauses">GROUP BY Clauses</a>
 The `GROUP BY` clause generalizes standard SQL's grouping and aggregation semantics, but it also retains backward compatibility with the standard (relational) SQL `GROUP BY` and aggregation features.
 
