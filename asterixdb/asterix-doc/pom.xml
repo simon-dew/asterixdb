@@ -86,6 +86,13 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-site-plugin</artifactId>
+        <dependencies>
+          <dependency>
+            <groupId>org.asciidoctor</groupId>
+            <artifactId>asciidoctor-maven-plugin</artifactId>
+            <version>1.5.8</version>
+          </dependency>
+        </dependencies>
         <configuration>
           <generateReports>false</generateReports>
         </configuration>
