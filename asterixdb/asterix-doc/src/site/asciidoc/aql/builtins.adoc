@@ -1,5 +1,5 @@
 = Builtin Functions
-:includedir: ../../../shared/modules/builtins/partials
+:includedir: ../../shared/modules/builtins/partials
 :toc:
 
 include::{includedir}/0_toc_common.adoc[]
