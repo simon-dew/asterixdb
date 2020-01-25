@@ -1,6 +1,7 @@
 = The Query Language
 :includedir: ../../shared/modules/sqlpp/partials
 :toc:
+:toclevels: 1
 
 include::{includedir}/1_intro.adoc[]
 include::{includedir}/2_expr_title.adoc[]

@@ -1,6 +1,7 @@
 = Builtin Functions
 :includedir: ../../shared/modules/builtins/partials
 :toc:
+:toclevels: 1
 
 include::{includedir}/0_toc_common.adoc[]
 include::{includedir}/1_numeric_common.adoc[]
