@@ -1,6 +1,5 @@
 [[ddl-and-dml-statements]]
-5. DDL and DML statements
--------------------------
+== 5. DDL and DML statements
 
 ------------------------------------------------------
 Statement ::= ( ( SingleStatement )? ( ";" )+ )* <EOF>

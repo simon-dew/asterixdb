@@ -10,8 +10,7 @@ ongoing processing of the query and immediately return an error message
 to the client.
 
 [[syntax-errors]]
-Syntax Errors
-~~~~~~~~~~~~~
+=== Syntax Errors
 
 A valid query must satisfy the grammar rules of the query language.
 Otherwise, a syntax error will be raised.
@@ -49,8 +48,7 @@ Error: Syntax error: In line 3 >>WHERE type="advertiser";<< Encountered 'type' "
 --------------------------------------------------------------------------------------------------
 
 [[identifier-resolution-errors]]
-Identifier Resolution Errors
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=== Identifier Resolution Errors
 
 Referring to an undefined identifier can cause an error if the
 identifier cannot be successfully resolved as a valid field access.
@@ -89,8 +87,7 @@ Error: Cannot resolve ambiguous alias reference for undefined identifier name
 -----------------------------------------------------------------------------
 
 [[type-errors]]
-Type Errors
-~~~~~~~~~~~
+=== Type Errors
 
 The query compiler does type checks based on its available type
 information. In addition, the query runtime also reports type errors if
@@ -112,8 +109,7 @@ Error: Type mismatch: function abs expects its 1st input parameter to be of type
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 [[resource-errors]]
-Resource Errors
-~~~~~~~~~~~~~~~
+=== Resource Errors
 
 A query can potentially exhaust system resources, such as the number of
 open files and disk spaces. For instance, the following two resource

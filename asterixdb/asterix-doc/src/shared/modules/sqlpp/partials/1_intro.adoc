@@ -1,6 +1,5 @@
 [[introduction]]
-1. Introduction
----------------
+== 1. Introduction
 
 This document is intended as a reference guide to the full syntax and
 semantics of AsterixDB's query language, a SQL-based language for

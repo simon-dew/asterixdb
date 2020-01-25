@@ -1,6 +1,5 @@
 [[controlling-index-only-plan-parameter]]
-Controlling Index-Only-Plan Parameter
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+=== Controlling Index-Only-Plan Parameter
 
 By default, the system tries to build an index-only plan whenever
 utilizing a secondary index is possible. For example, if a SELECT or
@@ -27,3 +26,4 @@ SET noindexonly 'true';
 SELECT m.message AS message
 FROM GleambookMessages m where m.message = " love product-b its shortcut-menu is awesome:)";
 --------------------------------------------------------------------------------------------
+

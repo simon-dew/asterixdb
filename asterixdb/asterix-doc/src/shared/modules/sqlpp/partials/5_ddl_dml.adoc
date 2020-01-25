@@ -1,10 +1,8 @@
 [[modification-statements]]
-Modification statements
-~~~~~~~~~~~~~~~~~~~~~~~
+=== Modification statements
 
 [[inserts]]
-INSERTs
-^^^^^^^
+==== INSERTs
 
 -------------------------------------------------------
 InsertStatement ::= <INSERT> <INTO> QualifiedName Query
@@ -44,8 +42,7 @@ INSERT INTO UsersCopy (SELECT VALUE user FROM GleambookUsers user)
 ------------------------------------------------------------------
 
 [[upserts]]
-UPSERTs
-^^^^^^^
+==== UPSERTs
 
 -------------------------------------------------------
 UpsertStatement ::= <UPSERT> <INTO> QualifiedName Query
@@ -79,8 +76,7 @@ UPSERT INTO UsersCopy (SELECT VALUE user FROM GleambookUsers user)
 (at the moment) in the current query language.
 
 [[deletes]]
-DELETEs
-^^^^^^^
+==== DELETEs
 
 -------------------------------------------------------------------------------------------------
 DeleteStatement ::= <DELETE> <FROM> QualifiedName ( ( <AS> )? Variable )? ( <WHERE> Expression )?
@@ -116,3 +112,4 @@ Example
 ----------------------------------------
 DELETE FROM GleambookUsers WHERE id = 5;
 ----------------------------------------
+

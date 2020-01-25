@@ -1,6 +1,5 @@
 [[functions]]
- Functions
-^^^^^^^^^^
+====  Functions
 
 The CREATE FUNCTION statement creates a *named* function that can then
 be used and reused in queries. The body of a function can be any query
@@ -28,8 +27,7 @@ CREATE FUNCTION friendInfo(userId) {
 ---------------------------------------------------------
 
 [[synonyms]]
- Synonyms
-^^^^^^^^^
+====  Synonyms
 
 --------------------------------------------------------------------------------
 SynonymSpecification ::= "SYNONYM" QualifiedName "FOR" QualifiedName IfNotExists
@@ -55,8 +53,7 @@ More information on how synonyms are resolved can be found in the
 appendix section on Variable Resolution.
 
 [[removal]]
- Removal
-^^^^^^^^
+====  Removal
 
 ------------------------------------------------------------------------
 DropStatement       ::= "DROP" ( "DATAVERSE" Identifier IfExists
@@ -103,8 +100,7 @@ explicitly include that information. (`friendInfo@1` above denotes the
 1-argument function named friendInfo in the current dataverse.)
 
 [[load-statement]]
-Load Statement
-^^^^^^^^^^^^^^
+==== Load Statement
 
 -----------------------------------------------------------------------------------------------------
 LoadStatement  ::= <LOAD> <DATASET> QualifiedName <USING> AdapterName Configuration ( <PRE-SORTED> )?
@@ -133,3 +129,4 @@ Example
  LOAD DATASET GleambookUsers USING localfs
     (("path"="127.0.0.1:///Users/bignosqlfan/tinysocialnew/gbu.adm"),("format"="adm"));
 ---------------------------------------------------------------------------------------
+

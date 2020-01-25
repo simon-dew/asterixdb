@@ -1,3 +1,2 @@
 [[errors]]
-4. Errors
----------
+== 4. Errors

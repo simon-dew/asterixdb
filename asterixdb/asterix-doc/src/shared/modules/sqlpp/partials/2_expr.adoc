@@ -14,8 +14,7 @@ Note that in the following text, words enclosed in angle brackets denote
 keywords that are not case-sensitive.
 
 [[operator-expressions]]
-Operator Expressions
-~~~~~~~~~~~~~~~~~~~~
+=== Operator Expressions
 
 Operators perform a specific operation on the input values or
 expressions. The syntax of an operator expression is as follows:
@@ -66,8 +65,7 @@ exceptions listed in link:#Comparison_operators[comparison operators]
 and link:#Logical_operators[logical operators].
 
 [[arithmetic-operators]]
-Arithmetic Operators
-^^^^^^^^^^^^^^^^^^^^
+==== Arithmetic Operators
 
 Arithmetic operators are used to exponentiate, add, subtract, multiply,
 and divide numeric values, or concatenate string values.
@@ -96,8 +94,7 @@ integers) |SELECT VALUE 5 / 2;
 |=======================================================================
 
 [[collection-operators]]
-Collection Operators
-^^^^^^^^^^^^^^^^^^^^
+==== Collection Operators
 
 Collection operators are used for membership tests (IN, NOT IN) or empty
 collection tests (EXISTS, NOT EXISTS).
@@ -119,8 +116,7 @@ ChirpMessages cm WHERE NOT EXISTS cm.referredTopics;
 |=======================================================================
 
 [[comparison-operators]]
-Comparison Operators
-^^^^^^^^^^^^^^^^^^^^
+==== Comparison Operators
 
 Comparison operators are used to compare values. The comparison
 operators fall into one of two sub-categories: missing value comparisons
@@ -222,8 +218,7 @@ operators work.
 |===================================================
 
 [[logical-operators]]
-Logical Operators
-^^^^^^^^^^^^^^^^^
+==== Logical Operators
 
 Logical operators perform logical `NOT`, `AND`, and `OR` operations over
 Boolean values (`TRUE` and `FALSE`) plus `NULL` and `MISSING`.
@@ -271,8 +266,7 @@ inputs.
 |================
 
 [[quantified-expressions]]
-Quantified Expressions
-~~~~~~~~~~~~~~~~~~~~~~
+=== Quantified Expressions
 
 ----------------------------------------------------------------------------------------------------------------
 QuantifiedExpression ::= ( (<ANY>|<SOME>) | <EVERY> ) Variable <IN> Expression ( "," Variable "in" Expression )*
@@ -307,8 +301,7 @@ SOME x IN [ 1, 2, 3 ] SATISFIES x < 3
 --------------------------------------
 
 [[path-expressions]]
-Path Expressions
-~~~~~~~~~~~~~~~~
+=== Path Expressions
 
 --------------------------------------------------------------
 PathExpression  ::= PrimaryExpression ( Field | Index )*
@@ -358,8 +351,7 @@ Examples
 --------------------------------------------------------
 
 [[primary-expressions]]
-Primary Expressions
-~~~~~~~~~~~~~~~~~~~
+=== Primary Expressions
 
 ---------------------------------------
 PrimaryExpr ::= Literal
@@ -379,8 +371,7 @@ model (such as a newly constructed object, array, or multiset of data
 model instances).
 
 [[literals]]
-Literals
-~~~~~~~~
+=== Literals
 
 -----------------------------------------------------------
 Literal        ::= StringLiteral
@@ -454,8 +445,7 @@ Different from standard SQL, double quotes play the same role as single
 quotes and may be used for string literals in queries as well.
 
 [[variable-references]]
-Variable References
-^^^^^^^^^^^^^^^^^^^
+==== Variable References
 
 ----------------------------------------------------------------------------
 VariableReference     ::= <IDENTIFIER> | <DelimitedIdentifier>
@@ -495,8 +485,7 @@ id
 -------------
 
 [[parameter-references]]
-Parameter References
-^^^^^^^^^^^^^^^^^^^^
+==== Parameter References
 
 ------------------------------------------------------------------------------------------
 ParameterReference              ::= NamedParameterReference | PositionalParameterReference
@@ -521,8 +510,7 @@ $1
 ---
 
 [[parenthesized-expressions]]
-Parenthesized Expressions
-^^^^^^^^^^^^^^^^^^^^^^^^^
+==== Parenthesized Expressions
 
 ---------------------------------------------------------
 ParenthesizedExpression ::= "(" Expression ")" | Subquery
@@ -542,8 +530,7 @@ Example
 ---------
 
 [[function-call-expressions]]
-Function Call Expressions
-^^^^^^^^^^^^^^^^^^^^^^^^^
+==== Function Call Expressions
 
 ------------------------------------------------------------------------------------------------------------
 FunctionCallExpression ::= ( FunctionName "(" ( Expression ( "," Expression )* )? ")" ) | WindowFunctionCall
@@ -571,8 +558,7 @@ length('a string')
 ------------------
 
 [[case-expressions]]
-Case Expressions
-~~~~~~~~~~~~~~~~
+=== Case Expressions
 
 ----------------------------------------------------------------------------------------------------------------
 CaseExpression ::= SimpleCaseExpression | SearchedCaseExpression
@@ -603,8 +589,7 @@ CASE (2 < 3) WHEN true THEN "yes" ELSE "no" END
 -----------------------------------------------
 
 [[constructors]]
-Constructors
-^^^^^^^^^^^^
+==== Constructors
 
 ---------------------------------------------------------------------------------------
 Constructor              ::= ArrayConstructor | MultisetConstructor | ObjectConstructor
@@ -675,3 +660,4 @@ This query outputs:
     "userSince": "2012-08-20T10:10:00"
 } ]
 --------------------------------------
+

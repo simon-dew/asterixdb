@@ -1,6 +1,5 @@
 [[declarations]]
-Declarations
-~~~~~~~~~~~~
+=== Declarations
 
 ----------------------------------------
 DatabaseDeclaration ::= "USE" Identifier
@@ -19,3 +18,4 @@ Example
 ---------------
 USE TinySocial;
 ---------------
+

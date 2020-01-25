@@ -1,3 +1,2 @@
 [[appendix-2.-performance-tuning]]
-Appendix 2. Performance Tuning
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== Appendix 2. Performance Tuning

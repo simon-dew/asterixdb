@@ -1,6 +1,5 @@
 [[parallel-sort-parameter]]
-Parallel Sort Parameter
-~~~~~~~~~~~~~~~~~~~~~~~
+=== Parallel Sort Parameter
 
 The following parameter enables you to activate or deactivate full
 parallel sort for order-by operations.
@@ -29,3 +28,4 @@ SELECT VALUE user
 FROM GleambookUsers AS user
 ORDER BY ARRAY_LENGTH(user.friendIds) DESC;
 -------------------------------------------
+
