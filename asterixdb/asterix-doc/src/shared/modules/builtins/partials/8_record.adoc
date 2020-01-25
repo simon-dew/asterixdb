@@ -1,10 +1,8 @@
 [[object-functions]]
-Object Functions
-~~~~~~~~~~~~~~~~
+== Object Functions
 
 [[get_object_fields]]
-get_object_fields
-^^^^^^^^^^^^^^^^^
+=== get_object_fields
 
 * Syntax:
 +
@@ -98,8 +96,7 @@ get_object_field_value({
 -----------
 
 [[object_remove_fields]]
-object_remove_fields
-^^^^^^^^^^^^^^^^^^^^
+=== object_remove_fields
 
 * Syntax:
 +
@@ -143,8 +140,7 @@ object_remove_fields(
 -----------------------------
 
 [[object_add_fields]]
-object_add_fields
-^^^^^^^^^^^^^^^^^
+=== object_add_fields
 
 * Syntax:
 +
@@ -191,8 +187,7 @@ object_add_fields(
 -------------------------------------------------------
 
 [[object_merge]]
-object_merge
-^^^^^^^^^^^^
+=== object_merge
 
 * Syntax:
 +
@@ -249,8 +244,7 @@ object_merge(
 -------------------------------
 
 [[object_length]]
-object_length
-^^^^^^^^^^^^^
+=== object_length
 
 * Syntax:
 +
@@ -284,8 +278,7 @@ object_length(
 -
 
 [[object_names]]
-object_names
-^^^^^^^^^^^^
+=== object_names
 
 * Syntax:
 +
@@ -318,8 +311,7 @@ object_names(
 ------------------------------
 
 [[object_remove]]
-object_remove
-^^^^^^^^^^^^^
+=== object_remove
 
 * Syntax:
 +
@@ -360,8 +352,7 @@ object_remove(
 -------------------------
 
 [[object_rename]]
-object_rename
-^^^^^^^^^^^^^
+=== object_rename
 
 * Syntax:
 +
@@ -407,8 +398,7 @@ object_rename(
 -----------------------------------------------
 
 [[object_unwrap]]
-object_unwrap
-^^^^^^^^^^^^^
+=== object_unwrap
 
 * Syntax:
 +
@@ -445,8 +435,7 @@ object_unwrap(
 ---
 
 [[object_replace]]
-object_replace
-^^^^^^^^^^^^^^
+=== object_replace
 
 * Syntax:
 +
@@ -490,8 +479,7 @@ object_replace(
 -----------------------------------------------
 
 [[object_add]]
-object_add
-^^^^^^^^^^
+=== object_add
 
 * Syntax:
 +
@@ -537,8 +525,7 @@ object_add(
 ------------------------------------------------
 
 [[object_put]]
-object_put
-^^^^^^^^^^
+=== object_put
 
 * Syntax:
 +
@@ -583,8 +570,7 @@ object_put(
 -----------------------------------------------
 
 [[object_values]]
-object_values
-^^^^^^^^^^^^^
+=== object_values
 
 * Syntax:
 +
@@ -620,8 +606,7 @@ object_values(
 -----------------------------------
 
 [[object_pairs]]
-object_pairs
-^^^^^^^^^^^^
+=== object_pairs
 
 * Syntax:
 +
@@ -660,8 +645,7 @@ object_pairs(
 -------------------------------------------------------------------
 
 [[pairs]]
-pairs
-^^^^^
+=== pairs
 
 * Syntax:
 +
@@ -705,3 +689,4 @@ pairs(
   [ "state", "CA" ]
 ]
 -----------------------------------------------------
+

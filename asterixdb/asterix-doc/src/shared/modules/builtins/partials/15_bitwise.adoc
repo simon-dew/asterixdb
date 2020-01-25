@@ -1,6 +1,5 @@
 [[bitwise-functions]]
-Bitwise Functions
-~~~~~~~~~~~~~~~~~
+== Bitwise Functions
 
 All Bit/Binary functions can only operate on 64-bit signed integers.
 
@@ -14,8 +13,7 @@ Bit (LSB) and bit 32 is the Most Significant Bit (MSB).
 (MSB) Bit 32 → `0000 0000 0000 0000 0000 0000 0000 0000` ← Bit 1 (LSB)
 
 [[bitand]]
-bitand
-^^^^^^
+=== bitand
 
 * Syntax:
 +
@@ -100,8 +98,7 @@ This results in 2 (0010 in binary) because only the 2nd bit from the
 right is 1 in all three numbers.
 
 [[bitclear]]
-bitclear
-^^^^^^^^
+=== bitclear
 
 * Syntax:
 +
@@ -169,8 +166,7 @@ This results in 4 (0*00*1*00*) because bits 1, 2, 4, and 5 changed to
 zero.
 
 [[bitnot]]
-bitnot
-^^^^^^
+=== bitnot
 
 * Syntax:
 +
@@ -213,8 +209,7 @@ This results in -4 (*1111 1111 1111 1111 1111 1111 1111 1100* in binary)
 because all bits changed.
 
 [[bitor]]
-bitor
-^^^^^
+=== bitor
 
 * Syntax:
 +
@@ -286,8 +281,7 @@ This results in 15 (1111 in binary) because there is at least one 1 in
 each of the four rightmost bits.
 
 [[bitset]]
-bitset
-^^^^^^
+=== bitset
 
 * Syntax:
 +
@@ -356,8 +350,7 @@ This results in 15 (*1*11*1* in binary) because bit 1 and 4 changed to
 ones.
 
 [[bitshift]]
-bitshift
-^^^^^^^^
+=== bitshift
 
 * Syntax:
 +
@@ -483,8 +476,7 @@ This results in 1 because the 1-bit wrapped left, around to the Least
 Significant Digit position.
 
 [[bittest]]
-bittest
-^^^^^^^
+=== bittest
 
 * Syntax:
 +
@@ -588,8 +580,7 @@ set to 0 (zero).
 The function has an alias `isbitset`.
 
 [[bitxor]]
-bitxor
-^^^^^^
+=== bitxor
 
 * Syntax:
 +

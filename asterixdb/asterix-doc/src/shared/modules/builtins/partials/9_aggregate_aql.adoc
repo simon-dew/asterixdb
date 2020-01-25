@@ -1,13 +1,11 @@
 [[aggregate-functions-array-functions]]
-Aggregate Functions (Array Functions)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== Aggregate Functions (Array Functions)
 
 This section contains detailed descriptions of each AQL aggregate
 function (i.e., array function).
 
 [[sql-count]]
-sql-count
-^^^^^^^^^
+=== sql-count
 
 * Syntax:
 +
@@ -38,8 +36,7 @@ sql-count( ['hello', 'world', 1, 2, 3, null, missing] );
 -
 
 [[sql-avg]]
-sql-avg
-^^^^^^^
+=== sql-avg
 
 * Syntax:
 +
@@ -76,8 +73,7 @@ sql-avg( [1.2, 2.3, 3.4, 0, null] );
 -----
 
 [[sql-sum]]
-sql-sum
-^^^^^^^
+=== sql-sum
 
 * Syntax:
 +
@@ -116,8 +112,7 @@ sql-sum( [1.2, 2.3, 3.4, 0, null, missing] );
 ---
 
 [[sql-sql_min]]
-sql-sql_min
-^^^^^^^^^^^
+=== sql-sql_min
 
 * Syntax:
 +
@@ -155,8 +150,7 @@ sql-min( [1.2, 2.3, 3.4, 0, null, missing] );
 ---
 
 [[sql-max]]
-sql-max
-^^^^^^^
+=== sql-max
 
 * Syntax:
 +
@@ -194,8 +188,7 @@ sql-max( [1.2, 2.3, 3.4, 0, null, missing] );
 ---
 
 [[count]]
-count
-^^^^^
+=== count
 
 * Syntax:
 +
@@ -224,8 +217,7 @@ count( [1, 2, null, missing] );
 -
 
 [[avg]]
-avg
-^^^
+=== avg
 
 * Syntax:
 +
@@ -259,8 +251,7 @@ avg( [100, 200, 300] );
 ---------
 
 [[sum]]
-sum
-^^^
+=== sum
 
 * Syntax:
 +
@@ -296,8 +287,7 @@ sum( [100, 200, 300] );
 ---
 
 [[sql-min]]
-sql-min
-^^^^^^^
+=== sql-min
 
 * Syntax:
 +
@@ -334,8 +324,7 @@ min( [10.2, 100, 5] );
 ---
 
 [[sql-max-1]]
-sql-max
-^^^^^^^
+=== sql-max
 
 * Syntax:
 +
@@ -370,3 +359,4 @@ max( [10.2, 100, 5] );
 -----
 100.0
 -----
+

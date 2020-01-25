@@ -1,10 +1,8 @@
 [[miscellaneous-functions]]
-Miscellaneous Functions
-~~~~~~~~~~~~~~~~~~~~~~~
+== Miscellaneous Functions
 
 [[uuid]]
-uuid
-^^^^
+=== uuid
 
 * Syntax:
 +
@@ -18,8 +16,7 @@ uuid()
 ** a generated, random `uuid`.
 
 [[len]]
-len
-^^^
+=== len
 
 * Syntax:
 +
@@ -46,8 +43,7 @@ len(["Hello", "World"])
 -
 
 [[not]]
-not
-^^^
+=== not
 
 * Syntax:
 +
@@ -75,8 +71,7 @@ not(expr)
 ---------------------------------------
 
 [[random]]
-random
-^^^^^^
+=== random
 
 * Syntax:
 +
@@ -102,8 +97,7 @@ representing the seed number.
 -----------------------------------------------------------------
 
 [[range]]
-range
-^^^^^
+=== range
 
 * Syntax:
 +
@@ -134,8 +128,7 @@ range(0, 3);
 --------------
 
 [[switch_case]]
-switch_case
-^^^^^^^^^^^
+=== switch_case
 
 * Syntax:
 +
@@ -191,8 +184,7 @@ switch_case(
 -
 
 [[deep_equal]]
-deep_equal
-^^^^^^^^^^
+=== deep_equal
 
 * Syntax:
 +
@@ -233,3 +225,4 @@ deep_equal(
 -----
 false
 -----
+

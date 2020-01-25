@@ -1,10 +1,8 @@
 [[string-functions]]
-String Functions
-~~~~~~~~~~~~~~~~
+== String Functions
 
 [[concat]]
-concat
-^^^^^^
+=== concat
 
 * Syntax:
 +
@@ -34,8 +32,7 @@ concat("test ", "driven ", "development");
 -------------------------
 
 [[contains]]
-contains
-^^^^^^^^
+=== contains
 
 * Syntax:
 +
@@ -70,8 +67,7 @@ index] can be utilized for this function.
 ---------------------------
 
 [[ends_with]]
-ends_with
-^^^^^^^^^
+=== ends_with
 
 * Syntax:
 +
@@ -107,8 +103,7 @@ ending substring.
 ---------------------------
 
 [[initcap-or-title]]
-initcap (or title)
-^^^^^^^^^^^^^^^^^^
+=== initcap (or title)
 
 * Syntax:
 +
@@ -137,8 +132,7 @@ alias called "title".
 ----------------------------------------------------------
 
 [[length]]
-length
-^^^^^^
+=== length
 
 * Syntax:
 +
@@ -166,8 +160,7 @@ length("test string");
 --
 
 [[lower]]
-lower
-^^^^^
+=== lower
 
 * Syntax:
 +
@@ -194,8 +187,7 @@ lower("ASTERIXDB");
 -----------
 
 [[ltrim]]
-ltrim
-^^^^^
+=== ltrim
 
 * Syntax:
 +
@@ -225,8 +217,7 @@ ltrim("me like x-phone", "eml");
 ---------------
 
 [[position]]
-position
-^^^^^^^^
+=== position
 
 * Syntax:
 +
@@ -266,8 +257,7 @@ returns the 1-based position. Below are the aliases for each version:
 ---------------------------------------
 
 [[regexp_contains]]
-regexp_contains
-^^^^^^^^^^^^^^^
+=== regexp_contains
 
 * Syntax:
 +
@@ -308,8 +298,7 @@ multiline (m), case_insensitive (i), and comments and whitespace (x).
 ---------------------------
 
 [[regexp_like]]
-regexp_like
-^^^^^^^^^^^
+=== regexp_like
 
 * Syntax:
 +
@@ -349,8 +338,7 @@ multiline (m), case_insensitive (i), and comments and whitespace (x).
 ---------------------------
 
 [[regexp_position]]
-regexp_position
-^^^^^^^^^^^^^^^
+=== regexp_position
 
 * Syntax:
 +
@@ -398,8 +386,7 @@ appears in `string` (starting at 0), or -1 if it does not appear.
 ----------------------------------------
 
 [[regexp_replace]]
-regexp_replace
-^^^^^^^^^^^^^^
+=== regexp_replace
 
 * Syntax:
 +
@@ -443,8 +430,7 @@ regexp_replace(" like x-phone the voicemail_service is awesome", " like x-phone"
 -------------------------------------------------
 
 [[repeat]]
-repeat
-^^^^^^
+=== repeat
 
 * Syntax:
 +
@@ -477,8 +463,7 @@ repeat("test", 3);
 --------------
 
 [[replace]]
-replace
-^^^^^^^
+=== replace
 
 * Syntax:
 +
@@ -520,8 +505,7 @@ type error,
 ----------------------------------------------------------
 
 [[reverse]]
-reverse
-^^^^^^^
+=== reverse
 
 * Syntax:
 +
@@ -551,8 +535,7 @@ reverse("hello");
 -------
 
 [[rtrim]]
-rtrim
-^^^^^
+=== rtrim
 
 * Syntax:
 +
@@ -585,8 +568,7 @@ rtrim(string[, chars]);
 ------------------------------------
 
 [[split]]
-split
-^^^^^
+=== split
 
 * Syntax:
 +
@@ -614,8 +596,7 @@ split("test driven development", " ");
 -----------------------------------
 
 [[starts_with]]
-starts_with
-^^^^^^^^^^^
+=== starts_with
 
 * Syntax:
 +
@@ -651,8 +632,7 @@ starting substring.
 ---------------------------
 
 [[substr]]
-substr
-^^^^^^
+=== substr
 
 * Syntax:
 +
@@ -699,8 +679,7 @@ starting offset is not within string bounds or `length` is negative.
 The function has an alias `substring`.
 
 [[trim]]
-trim
-^^^^
+=== trim
 
 * Syntax:
 +
@@ -730,8 +709,7 @@ trim("i like x-phone", "xphoen");
 --------
 
 [[upper]]
-upper
-^^^^^
+=== upper
 
 * Syntax:
 +
@@ -756,3 +734,4 @@ upper("hello")
 -------
 "HELLO"
 -------
+

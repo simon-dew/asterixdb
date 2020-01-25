@@ -1,10 +1,8 @@
 [[type-functions]]
-Type Functions
-~~~~~~~~~~~~~~
+== Type Functions
 
 [[is_array]]
-is_array
-^^^^^^^^
+=== is_array
 
 * Syntax:
 +
@@ -43,8 +41,7 @@ value.
 The function has an alias `isarray`.
 
 [[is_atomic-is_atom]]
-is_atomic (is_atom)
-^^^^^^^^^^^^^^^^^^^
+=== is_atomic (is_atom)
 
 * Syntax:
 +
@@ -83,8 +80,7 @@ link:../datamodel.html#PrimitiveTypes[primitive] type.
 The function has three aliases: `isatomic`, `is_atom`, and `isatom`.
 
 [[is_boolean-is_bool]]
-is_boolean (is_bool)
-^^^^^^^^^^^^^^^^^^^^
+=== is_boolean (is_bool)
 
 * Syntax:
 +
@@ -123,8 +119,7 @@ value.
 The function has three aliases: `isboolean`, `is_bool`, and `isbool`.
 
 [[is_number-is_num]]
-is_number (is_num)
-^^^^^^^^^^^^^^^^^^
+=== is_number (is_num)
 
 * Syntax:
 +
@@ -164,8 +159,7 @@ value.
 The function has three aliases: `isnumber`, `is_num`, and `isnum`.
 
 [[is_object-is_obj]]
-is_object (is_obj)
-^^^^^^^^^^^^^^^^^^
+=== is_object (is_obj)
 
 * Syntax:
 +
@@ -203,8 +197,7 @@ false, "h": false, "i": true }
 The function has three aliases: `isobject`, `is_obj`, and `isobj`.
 
 [[is_string-is_str]]
-is_string (is_str)
-^^^^^^^^^^^^^^^^^^
+=== is_string (is_str)
 
 * Syntax:
 +
@@ -243,8 +236,7 @@ value.
 The function has three aliases: `isstring`, `is_str`, and `isstr`.
 
 [[is_null]]
-is_null
-^^^^^^^
+=== is_null
 
 * Syntax:
 +
@@ -271,8 +263,7 @@ is_null(expr)
 The function has an alias `isnull`.
 
 [[is_missing]]
-is_missing
-^^^^^^^^^^
+=== is_missing
 
 * Syntax:
 +
@@ -299,8 +290,7 @@ value.
 The function has an alias `ismissing`.
 
 [[is_unknown]]
-is_unknown
-^^^^^^^^^^
+=== is_unknown
 
 * Syntax:
 +
@@ -328,8 +318,7 @@ value.
 The function has an alias `isunknown`.
 
 [[to_array]]
-to_array
-^^^^^^^^
+=== to_array
 
 * Syntax:
 +
@@ -364,8 +353,7 @@ item is returned
 The function has an alias `toarray`.
 
 [[to_atomic-to_atom]]
-to_atomic (to_atom)
-^^^^^^^^^^^^^^^^^^^
+=== to_atomic (to_atom)
 
 * Syntax:
 +
@@ -406,8 +394,7 @@ result of invoking to_atomic() on the value of that field is returned
 The function has three aliases: `toatomic`, `to_atom`, and `toatom`.
 
 [[to_boolean-to_bool]]
-to_boolean (to_bool)
-^^^^^^^^^^^^^^^^^^^^
+=== to_boolean (to_bool)
 
 * Syntax:
 +
@@ -449,8 +436,7 @@ has no fields, otherwise `true`
 The function has three aliases: `toboolean`, `to_bool`, and `tobool`.
 
 [[to_bigint]]
-to_bigint
-^^^^^^^^^
+=== to_bigint
 
 * Syntax:
 +
@@ -495,8 +481,7 @@ returned
 The function has an alias `tobigint`.
 
 [[to_double]]
-to_double
-^^^^^^^^^
+=== to_double
 
 * Syntax:
 +
@@ -538,8 +523,7 @@ returned
 The function has an alias `todouble`.
 
 [[to_number-to_num]]
-to_number (to_num)
-^^^^^^^^^^^^^^^^^^
+=== to_number (to_num)
 
 * Syntax:
 +
@@ -582,8 +566,7 @@ returned
 The function has three aliases: `tonumber`, `to_num`, and `tonum`.
 
 [[to_object-to_obj]]
-to_object (to_obj)
-^^^^^^^^^^^^^^^^^^
+=== to_object (to_obj)
 
 * Syntax:
 +
@@ -615,8 +598,7 @@ to_object(expr)
 The function has three aliases: `toobject`, `to_obj`, and `toobj`.
 
 [[to_string-to_str]]
-to_string (to_str)
-^^^^^^^^^^^^^^^^^^
+=== to_string (to_str)
 
 * Syntax:
 +

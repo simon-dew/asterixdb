@@ -1,10 +1,8 @@
 [[spatial-functions]]
-Spatial Functions
-~~~~~~~~~~~~~~~~~
+== Spatial Functions
 
 [[create_point]]
-create_point
-^^^^^^^^^^^^
+=== create_point
 
 * Syntax:
 +
@@ -33,8 +31,7 @@ create_point(x, y)
 -------------------------------
 
 [[create_line]]
-create_line
-^^^^^^^^^^^
+=== create_line
 
 * Syntax:
 +
@@ -64,8 +61,7 @@ create_line(point1, point2)
 ---------------------------------------
 
 [[create_rectangle]]
-create_rectangle
-^^^^^^^^^^^^^^^^
+=== create_rectangle
 
 * Syntax:
 +
@@ -97,8 +93,7 @@ and `point2`,
 -------------------------------------------------
 
 [[create_circle]]
-create_circle
-^^^^^^^^^^^^^
+=== create_circle
 
 * Syntax:
 +
@@ -130,8 +125,7 @@ provided in `point` and `radius`.
 -------------------------------------
 
 [[create_polygon]]
-create_polygon
-^^^^^^^^^^^^^^
+=== create_polygon
 
 * Syntax:
 +
@@ -167,8 +161,7 @@ array will cause a type error.
 ---------------------------------------------------------
 
 [[get_xget_y]]
-get_x/get_y
-^^^^^^^^^^^
+=== get_x/get_y
 
 * Syntax:
 +
@@ -195,8 +188,7 @@ get_x(point) or get_y(point)
 --------------------------------------------
 
 [[get_points]]
-get_points
-^^^^^^^^^^
+=== get_points
 
 * Syntax:
 +
@@ -225,8 +217,7 @@ get_points(create_polygon([1.0,1.0,2.0,2.0,3.0,3.0,4.0,4.0]))
 --------------------------------------------------------------------------
 
 [[get_centerget_radius]]
-get_center/get_radius
-^^^^^^^^^^^^^^^^^^^^^
+=== get_center/get_radius
 
 * Syntax:
 +
@@ -258,8 +249,7 @@ respectively.
 -----------------------------------------------------------
 
 [[spatial_distance]]
-spatial_distance
-^^^^^^^^^^^^^^^^
+=== spatial_distance
 
 * Syntax:
 +
@@ -288,8 +278,7 @@ spatial_distance(point("47.44,80.65"), create_point(30.0,70.0));
 ------------------
 
 [[spatial_area]]
-spatial_area
-^^^^^^^^^^^^
+=== spatial_area
 
 * Syntax:
 +
@@ -316,8 +305,7 @@ spatial_area(create_circle(create_point(0.0,0.0), 5.0));
 -----------
 
 [[spatial_intersect]]
-spatial_intersect
-^^^^^^^^^^^^^^^^^
+=== spatial_intersect
 
 * Syntax:
 +
@@ -349,8 +337,7 @@ true
 ----
 
 [[spatial_cell]]
-spatial_cell
-^^^^^^^^^^^^
+=== spatial_cell
 
 * Syntax:
 +
@@ -382,3 +369,4 @@ spatial_cell(point("39.28,70.48"), create_point(20.0,50.0), 5.5, 6.0);
 ---------------------------------
 rectangle("36.5,68.0 42.0,74.0");
 ---------------------------------
+

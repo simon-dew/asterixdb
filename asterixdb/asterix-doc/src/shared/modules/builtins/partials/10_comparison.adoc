@@ -1,10 +1,8 @@
 [[comparison-functions]]
-Comparison Functions
-~~~~~~~~~~~~~~~~~~~~
+== Comparison Functions
 
 [[greatest]]
-greatest
-^^^^^^^^
+=== greatest
 
 * Syntax:
 +
@@ -37,8 +35,7 @@ items.
 -------------------------
 
 [[least]]
-least
-^^^^^
+=== least
 
 * Syntax:
 +
@@ -69,3 +66,4 @@ items.
 -----------------------
 { "v1": 1, "v2": -0.5 }
 -----------------------
+

@@ -1,6 +1,5 @@
 [[interval_before-interval_after]]
-interval_before, interval_after
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=== interval_before, interval_after
 
 * Syntax:
 +
@@ -39,8 +38,7 @@ another interval.
 ---------------------------------------------------
 
 [[interval_covers-interval_covered_by]]
-interval_covers, interval_covered_by
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=== interval_covers, interval_covered_by
 
 * Syntax:
 +
@@ -82,8 +80,7 @@ interval2.start <= interval1.start AND interval2.end >= interval1.end
 --------------------------------------------------------
 
 [[interval_overlaps-interval_overlapped_by]]
-interval_overlaps, interval_overlapped_by
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=== interval_overlaps, interval_overlapped_by
 
 * Syntax:
 +
@@ -132,8 +129,7 @@ the Allen's relations on the definition of overlap.
 -------------------------------------------
 
 [[interval_overlapping]]
-interval_overlapping
-^^^^^^^^^^^^^^^^^^^^
+=== interval_overlapping
 
 Note that `interval_overlapping` is not an Allen's Relation, but
 syntactic sugar we added for the case that the intersect of two
@@ -176,8 +172,7 @@ interval1.start < interval2.end AND interval1.end > interval2.start
 ----------------------------------------------
 
 [[interval_meets-interval_met_by]]
-interval_meets, interval_met_by
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=== interval_meets, interval_met_by
 
 * Syntax:
 +
@@ -217,8 +212,7 @@ interval.
 --------------------------------
 
 [[interval_starts-interval_started_by]]
-interval_starts, interval_started_by
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=== interval_starts, interval_started_by
 
 * Syntax:
 +
@@ -263,8 +257,7 @@ AND interval2.end <= interval1.end
 --------------------------------------------------------
 
 [[interval_ends-interval_ended_by]]
-interval_ends, interval_ended_by
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=== interval_ends, interval_ended_by
 
 * Syntax:
 +
@@ -304,3 +297,4 @@ interval2.end = interval1.end AND interval2.start >= interval1.start
 ----------------------------------------------------
 { "interval_ends": true, "interval_ended_by": true }
 ----------------------------------------------------
+

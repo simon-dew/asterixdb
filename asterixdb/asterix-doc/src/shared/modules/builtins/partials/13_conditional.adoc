@@ -1,10 +1,8 @@
 [[conditional-functions]]
-Conditional Functions
-~~~~~~~~~~~~~~~~~~~~~
+== Conditional Functions
 
 [[if_null-ifnull]]
-if_null (ifnull)
-^^^^^^^^^^^^^^^^
+=== if_null (ifnull)
 
 * Syntax:
 +
@@ -37,8 +35,7 @@ specified
 The function has an alias `ifnull`.
 
 [[if_missing-ifmissing]]
-if_missing (ifmissing)
-^^^^^^^^^^^^^^^^^^^^^^
+=== if_missing (ifmissing)
 
 * Syntax:
 +
@@ -72,8 +69,7 @@ specified
 The function has an alias `ifmissing`.
 
 [[if_missing_or_null-ifmissingornull-coalesce]]
-if_missing_or_null (ifmissingornull, coalesce)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=== if_missing_or_null (ifmissingornull, coalesce)
 
 * Syntax:
 +
@@ -106,8 +102,7 @@ no arguments specified
 The function has two aliases: `ifmissingornull` and `coalesce`.
 
 [[if_inf-ifinf]]
-if_inf (ifinf)
-^^^^^^^^^^^^^^
+=== if_inf (ifinf)
 
 * Syntax:
 +
@@ -146,8 +141,7 @@ encountered before the first non-infinite number argument
 The function has an alias `ifinf`.
 
 [[if_nan-ifnan]]
-if_nan (ifnan)
-^^^^^^^^^^^^^^
+=== if_nan (ifnan)
 
 * Syntax:
 +
@@ -186,8 +180,7 @@ encountered before the first non-`NaN` number argument
 The function has an alias `ifnan`.
 
 [[if_nan_or_inf-ifnanorinf]]
-if_nan_or_inf (ifnanorinf)
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+=== if_nan_or_inf (ifnanorinf)
 
 * Syntax:
 +
@@ -226,8 +219,7 @@ encountered before the first non-infinite and non-`NaN` number argument
 The function has an alias `ifnanorinf`.
 
 [[null_if-nullif]]
-null_if (nullif)
-^^^^^^^^^^^^^^^^
+=== null_if (nullif)
 
 * Syntax:
 +
@@ -262,8 +254,7 @@ or
 The function has an alias `nullif`.
 
 [[missing_if-missingif]]
-missing_if (missingif)
-^^^^^^^^^^^^^^^^^^^^^^
+=== missing_if (missingif)
 
 * Syntax:
 +
@@ -298,8 +289,7 @@ otherwise returns the first argument.
 The function has an alias `missingif`.
 
 [[nan_if-nanif]]
-nan_if (nanif)
-^^^^^^^^^^^^^^
+=== nan_if (nanif)
 
 * Syntax:
 +
@@ -333,8 +323,7 @@ otherwise returns the first argument.
 The function has an alias `nanif`.
 
 [[posinf_if-posinfif]]
-posinf_if (posinfif)
-^^^^^^^^^^^^^^^^^^^^
+=== posinf_if (posinfif)
 
 * Syntax:
 +
@@ -368,8 +357,7 @@ otherwise returns the first argument.
 The function has an alias `posinfif`.
 
 [[neginf_if-neginfif]]
-neginf_if (neginfif)
-^^^^^^^^^^^^^^^^^^^^
+=== neginf_if (neginfif)
 
 * Syntax:
 +

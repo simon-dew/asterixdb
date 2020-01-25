@@ -1,10 +1,8 @@
 [[binary-functions]]
-Binary Functions
-~~~~~~~~~~~~~~~~
+== Binary Functions
 
 [[parse_binary]]
-parse_binary
-^^^^^^^^^^^^
+=== parse_binary
 
 * Syntax:
 +
@@ -31,8 +29,7 @@ parse_binary('QXN0ZXJpeAE=',"base64") ];
 hex("4173746572697801") ]
 
 [[print_binary]]
-print_binary
-^^^^^^^^^^^^
+=== print_binary
 
 * Syntax:
 +
@@ -60,8 +57,7 @@ Currently we support `hex` and `base64` format.
 --------------------------------------
 
 [[binary_length]]
-binary_length
-^^^^^^^^^^^^^
+=== binary_length
 
 * Syntax:
 +
@@ -84,8 +80,7 @@ binary_length(hex("00AA"))
 2
 
 [[sub_binary]]
-sub_binary
-^^^^^^^^^^
+=== sub_binary
 
 * Syntax:
 +
@@ -120,8 +115,7 @@ hex("DD")
 ---------
 
 [[binary_concat]]
-binary_concat
-^^^^^^^^^^^^^
+=== binary_concat
 
 * Syntax:
 +

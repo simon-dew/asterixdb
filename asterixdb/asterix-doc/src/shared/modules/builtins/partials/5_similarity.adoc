@@ -1,14 +1,12 @@
 [[similarity-functions]]
-Similarity Functions
-~~~~~~~~~~~~~~~~~~~~
+== Similarity Functions
 
 AsterixDB supports queries with different similarity functions,
 including http://en.wikipedia.org/wiki/Levenshtein_distance[edit
 distance] and https://en.wikipedia.org/wiki/Jaccard_index[Jaccard].
 
 [[edit_distance]]
-edit_distance
-^^^^^^^^^^^^^
+=== edit_distance
 
 * Syntax:
 +
@@ -42,8 +40,7 @@ edit_distance("SuzannaTillson", "Suzanna Tilson");
 -
 
 [[edit_distance_check]]
-edit_distance_check
-^^^^^^^^^^^^^^^^^^^
+=== edit_distance_check
 
 * Syntax:
 +
@@ -87,8 +84,7 @@ edit_distance_check("happy","hapr",2);
 -----------
 
 [[edit_distance_contains]]
-edit_distance_contains
-^^^^^^^^^^^^^^^^^^^^^^
+=== edit_distance_contains
 
 * Syntax:
 +
@@ -131,8 +127,7 @@ edit_distance_contains("happy","hapr",2);
 -----------
 
 [[similarity_jaccard]]
-similarity_jaccard
-^^^^^^^^^^^^^^^^^^
+=== similarity_jaccard
 
 * Syntax:
 +
@@ -170,8 +165,7 @@ similarity_jaccard([1,5,8,9], [1,5,9,10]);
 ---
 
 [[similarity_jaccard_check]]
-similarity_jaccard_check
-^^^^^^^^^^^^^^^^^^^^^^^^
+=== similarity_jaccard_check
 
 * Syntax:
 +
@@ -215,3 +209,4 @@ similarity_jaccard_check([1,5,8,9], [1,5,9,10], 0.6);
 --------------
 [ false, 0.0 ]
 --------------
+

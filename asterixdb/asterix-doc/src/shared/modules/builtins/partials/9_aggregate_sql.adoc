@@ -1,6 +1,5 @@
 [[aggregate-functions-array-functions]]
-Aggregate Functions (Array Functions)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+== Aggregate Functions (Array Functions)
 
 This section contains detailed descriptions of the built-in aggregate
 functions in the query language.
@@ -25,8 +24,7 @@ with an OVER clause. Refer to link:manual.html#Over_clauses[OVER
 Clauses] for details.
 
 [[array_count]]
-array_count
-^^^^^^^^^^^
+=== array_count
 
 * Syntax:
 +
@@ -57,8 +55,7 @@ array_count( ['hello', 'world', 1, 2, 3, null, missing] );
 -
 
 [[array_avg]]
-array_avg
-^^^^^^^^^
+=== array_avg
 
 * Syntax:
 +
@@ -95,8 +92,7 @@ array_avg( [1.2, 2.3, 3.4, 0, null] );
 -----
 
 [[array_sum]]
-array_sum
-^^^^^^^^^
+=== array_sum
 
 * Syntax:
 +
@@ -135,8 +131,7 @@ array_sum( [1.2, 2.3, 3.4, 0, null, missing] );
 ---
 
 [[array_min]]
-array_min
-^^^^^^^^^
+=== array_min
 
 * Syntax:
 +
@@ -174,8 +169,7 @@ array_min( [1.2, 2.3, 3.4, 0, null, missing] );
 ---
 
 [[array_max]]
-array_max
-^^^^^^^^^
+=== array_max
 
 * Syntax:
 +
@@ -213,8 +207,7 @@ array_max( [1.2, 2.3, 3.4, 0, null, missing] );
 ---
 
 [[array_stddev_samp]]
-array_stddev_samp
-^^^^^^^^^^^^^^^^^
+=== array_stddev_samp
 
 * Syntax:
 +
@@ -251,8 +244,7 @@ array_stddev_samp( [1.2, 2.3, 3.4, 0, null] );
 ------------------
 
 [[array_stddev_pop]]
-array_stddev_pop
-^^^^^^^^^^^^^^^^
+=== array_stddev_pop
 
 * Syntax:
 +
@@ -289,8 +281,7 @@ array_stddev_pop( [1.2, 2.3, 3.4, 0, null] );
 ------------------
 
 [[array_var_samp]]
-array_var_samp
-^^^^^^^^^^^^^^
+=== array_var_samp
 
 * Syntax:
 +
@@ -327,8 +318,7 @@ array_var_samp( [1.2, 2.3, 3.4, 0, null] );
 ------------------
 
 [[array_var_pop]]
-array_var_pop
-^^^^^^^^^^^^^
+=== array_var_pop
 
 * Syntax:
 +
@@ -365,8 +355,7 @@ array_var_pop( [1.2, 2.3, 3.4, 0, null] );
 ------------------
 
 [[array_skewness]]
-array_skewness
-^^^^^^^^^^^^^^
+=== array_skewness
 
 * Syntax:
 +
@@ -403,8 +392,7 @@ array_skewness( [1.2, 2.3, 3.4, 0, null] );
 --------------------
 
 [[array_kurtosis]]
-array_kurtosis
-^^^^^^^^^^^^^^
+=== array_kurtosis
 
 * Syntax:
 +
@@ -441,8 +429,7 @@ array_kurtosis( [1.2, 2.3, 3.4, 0, null] );
 ------------------
 
 [[strict_count]]
-strict_count
-^^^^^^^^^^^^
+=== strict_count
 
 * Syntax:
 +
@@ -471,8 +458,7 @@ strict_count( [1, 2, null, missing] );
 -
 
 [[strict_avg]]
-strict_avg
-^^^^^^^^^^
+=== strict_avg
 
 * Syntax:
 +
@@ -506,8 +492,7 @@ strict_avg( [100, 200, 300] );
 -----
 
 [[strict_sum]]
-strict_sum
-^^^^^^^^^^
+=== strict_sum
 
 * Syntax:
 +
@@ -543,8 +528,7 @@ strict_sum( [100, 200, 300] );
 ---
 
 [[strict_min]]
-strict_min
-^^^^^^^^^^
+=== strict_min
 
 * Syntax:
 +
@@ -581,8 +565,7 @@ strict_min( [10.2, 100, 5] );
 ---
 
 [[strict_max]]
-strict_max
-^^^^^^^^^^
+=== strict_max
 
 * Syntax:
 +
@@ -619,8 +602,7 @@ strict_max( [10.2, 100, 5] );
 -----
 
 [[strict_stddev_samp]]
-strict_stddev_samp
-^^^^^^^^^^^^^^^^^^
+=== strict_stddev_samp
 
 * Syntax:
 +
@@ -655,8 +637,7 @@ strict_stddev_samp( [100, 200, 300] );
 -----
 
 [[strict_stddev_pop]]
-strict_stddev_pop
-^^^^^^^^^^^^^^^^^
+=== strict_stddev_pop
 
 * Syntax:
 +
@@ -691,8 +672,7 @@ strict_stddev_pop( [100, 200, 300] );
 -----------------
 
 [[strict_var_samp]]
-strict_var_samp
-^^^^^^^^^^^^^^^
+=== strict_var_samp
 
 * Syntax:
 +
@@ -727,8 +707,7 @@ strict_var_samp( [100, 200, 300] );
 -------
 
 [[strict_var_pop]]
-strict_var_pop
-^^^^^^^^^^^^^^
+=== strict_var_pop
 
 * Syntax:
 +
@@ -763,8 +742,7 @@ strict_var_pop( [100, 200, 300] );
 -----------------
 
 [[strict_skewness]]
-strict_skewness
-^^^^^^^^^^^^^^^
+=== strict_skewness
 
 * Syntax:
 +
@@ -798,8 +776,7 @@ strict_skewness( [100, 200, 300] );
 ---
 
 [[strict_kurtosis]]
-strict_kurtosis
-^^^^^^^^^^^^^^^
+=== strict_kurtosis
 
 * Syntax:
 +
@@ -832,3 +809,4 @@ strict_kurtosis( [100, 200, 300] );
 ----
 -1.5
 ----
+

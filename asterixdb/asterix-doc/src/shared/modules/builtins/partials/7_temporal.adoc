@@ -1,10 +1,8 @@
 [[temporal-functions]]
-Temporal Functions
-~~~~~~~~~~~~~~~~~~
+== Temporal Functions
 
 [[get_yearget_monthget_dayget_hourget_minuteget_secondget_millisecond]]
-get_year/get_month/get_day/get_hour/get_minute/get_second/get_millisecond
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=== get_year/get_month/get_day/get_hour/get_minute/get_second/get_millisecond
 
 * Syntax:
 +
@@ -41,8 +39,7 @@ following types: `date`, `datetime`, `time`, and `duration`.
 --------------------------------------------------------------------------------------
 
 [[adjust_datetime_for_timezone]]
-adjust_datetime_for_timezone
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=== adjust_datetime_for_timezone
 
 * Syntax:
 +
@@ -75,8 +72,7 @@ adjust_datetime_for_timezone(datetime("2008-04-26T10:10:00"), "+08:00");
 -------------------------------
 
 [[adjust_time_for_timezone]]
-adjust_time_for_timezone
-^^^^^^^^^^^^^^^^^^^^^^^^
+=== adjust_time_for_timezone
 
 * Syntax:
 +
@@ -109,8 +105,7 @@ adjust_time_for_timezone(get_time_from_datetime(datetime("2008-04-26T10:10:00"))
 --------------------
 
 [[calendar_duration_from_datetime]]
-calendar_duration_from_datetime
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=== calendar_duration_from_datetime
 
 * Syntax:
 +
@@ -147,8 +142,7 @@ duration("P5Y2M24DT10H10M")
 ---------------------------
 
 [[get_year_month_durationget_day_time_duration]]
-get_year_month_duration/get_day_time_duration
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=== get_year_month_duration/get_day_time_duration
 
 * Syntax:
 +
@@ -175,8 +169,7 @@ year_month_duration("P1Y")
 --------------------------
 
 [[months_from_year_month_durationms_from_day_time_duration]]
-months_from_year_month_duration/ms_from_day_time_duration
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=== months_from_year_month_duration/ms_from_day_time_duration
 
 * Syntax:
 +
@@ -207,8 +200,7 @@ months_from_year_month_duration/ms_from_day_time_duration(duration_value)
 ---------------------------------------
 
 [[duration_from_monthsduration_from_ms]]
-duration_from_months/duration_from_ms
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=== duration_from_months/duration_from_ms
 
 * Syntax:
 +
@@ -236,8 +228,7 @@ duration("P8M")
 ---------------
 
 [[duration_from_interval]]
-duration_from_interval
-^^^^^^^^^^^^^^^^^^^^^^
+=== duration_from_interval
 
 * Syntax:
 +
@@ -274,8 +265,7 @@ duration_from_interval(interval_value)
 ----------------------------------------------
 
 [[current_date]]
-current_date
-^^^^^^^^^^^^
+=== current_date
 
 * Syntax:
 +
@@ -288,8 +278,7 @@ current_date()
 ** a `date` value of the date when the function is called.
 
 [[current_time]]
-current_time
-^^^^^^^^^^^^
+=== current_time
 
 * Syntax:
 +
@@ -302,8 +291,7 @@ current_time()
 ** a `time` value of the time when the function is called.
 
 [[current_datetime]]
-current_datetime
-^^^^^^^^^^^^^^^^
+=== current_datetime
 
 * Syntax:
 +
@@ -316,8 +304,7 @@ current_datetime()
 ** a `datetime` value of the datetime when the function is called.
 
 [[get_date_from_datetime]]
-get_date_from_datetime
-^^^^^^^^^^^^^^^^^^^^^^
+=== get_date_from_datetime
 
 * Syntax:
 +
@@ -332,8 +319,7 @@ get_date_from_datetime(datetime)
 ** any other non-datetime input value will cause a type error.
 
 [[get_time_from_datetime]]
-get_time_from_datetime
-^^^^^^^^^^^^^^^^^^^^^^
+=== get_time_from_datetime
 
 * Syntax:
 +
@@ -360,8 +346,7 @@ time("10:10:00.000Z")
 ---------------------
 
 [[day_of_week]]
-day_of_week
-^^^^^^^^^^^
+=== day_of_week
 
 * Syntax:
 +
@@ -388,8 +373,7 @@ day_of_week(datetime("2012-12-30T12:12:12.039Z"));
 -
 
 [[date_from_unix_time_in_days]]
-date_from_unix_time_in_days
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=== date_from_unix_time_in_days
 
 * Syntax:
 +
@@ -409,8 +393,7 @@ representing the number of days.
 ** any other non-numeric input value will cause a type error.
 
 [[datetime_from_unix_time_in_ms]]
-datetime_from_unix_time_in_ms
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=== datetime_from_unix_time_in_ms
 
 * Syntax:
 +
@@ -430,8 +413,7 @@ since 1970-01-01T00:00:00Z,
 ** any other non-numeric input value will cause a type error.
 
 [[datetime_from_unix_time_in_secs]]
-datetime_from_unix_time_in_secs
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=== datetime_from_unix_time_in_secs
 
 * Syntax:
 +
@@ -451,8 +433,7 @@ representing the number of seconds.
 ** any other non-numeric input value will cause a type error.
 
 [[datetime_from_date_time]]
-datetime_from_date_time
-^^^^^^^^^^^^^^^^^^^^^^^
+=== datetime_from_date_time
 
 * Syntax:
 
@@ -472,8 +453,7 @@ datetime_from_date_time(date,time)
 *** or, the second argument is any other non-time value.
 
 [[time_from_unix_time_in_ms]]
-time_from_unix_time_in_ms
-^^^^^^^^^^^^^^^^^^^^^^^^^
+=== time_from_unix_time_in_ms
 
 * Syntax:
 +
@@ -507,8 +487,7 @@ representing the number of milliseconds.
 ---------------------------------------------------------------------------------------------------------------
 
 [[unix_time_from_date_in_days]]
-unix_time_from_date_in_days
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=== unix_time_from_date_in_days
 
 * Syntax:
 +
@@ -526,8 +505,7 @@ for `date_value`.
 ** any other non-date input value will cause a type error.
 
 [[unix_time_from_datetime_in_ms]]
-unix_time_from_datetime_in_ms
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=== unix_time_from_datetime_in_ms
 
 * Syntax:
 +
@@ -545,8 +523,7 @@ unix_time_from_datetime_in_ms(datetime_value)
 ** any other non-datetime input value will cause a type error.
 
 [[unix_time_from_datetime_in_secs]]
-unix_time_from_datetime_in_secs
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=== unix_time_from_datetime_in_secs
 
 * Syntax:
 +
@@ -564,8 +541,7 @@ unix_time_from_datetime_in_secs(datetime_value)
 ** any other non-datetime input value will cause a type error.
 
 [[unix_time_from_time_in_ms]]
-unix_time_from_time_in_ms
-^^^^^^^^^^^^^^^^^^^^^^^^^
+=== unix_time_from_time_in_ms
 
 * Syntax:
 +
@@ -597,8 +573,7 @@ unix_time_from_time_in_ms(time_value)
 ---------------------------------------------------------------------------------------------------------------
 
 [[parse_dateparse_timeparse_datetime]]
-parse_date/parse_time/parse_datetime
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=== parse_date/parse_time/parse_datetime
 
 * Syntax:
 
@@ -641,8 +616,7 @@ time("00:30:30.000Z")
 ---------------------
 
 [[print_dateprint_timeprint_datetime]]
-print_date/print_time/print_datetime
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=== print_date/print_time/print_datetime
 
 * Syntax:
 +
@@ -686,8 +660,7 @@ print_time(time("00:30:30.000Z"),"m:s");
 -------
 
 [[get_interval_start-get_interval_end]]
-get_interval_start, get_interval_end
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=== get_interval_start, get_interval_end
 
 * Syntax:
 +
@@ -719,8 +692,7 @@ the interval) representing the starting or ending time,
 
 [[get_interval_start_dateget_interval_start_datetimeget_interval_start_time-get_interval_end_dateget_interval_end_datetimeget_interval_end_time]]
 get_interval_start_date/get_interval_start_datetimeget_interval_start_time,
-get_interval_end_date/get_interval_end_datetime/get_interval_end_time
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=== get_interval_end_date/get_interval_end_datetime/get_interval_end_time
 
 * Syntax:
 +
@@ -763,8 +735,7 @@ representing the starting or ending time,
 -------------------------------------------------
 
 [[get_overlapping_interval]]
-get_overlapping_interval
-^^^^^^^^^^^^^^^^^^^^^^^^
+=== get_overlapping_interval
 
 * Syntax:
 +
@@ -808,8 +779,7 @@ interval must be of the same type.
 ---------------------------------------------------------------------------------------------------
 
 [[interval_bin]]
-interval_bin
-^^^^^^^^^^^^
+=== interval_bin
 
 * Syntax:
 +
@@ -869,8 +839,7 @@ non-year_month_duration/non-day_time_duration value.
 -----------------------------------------------------------------------------------------------
 
 [[interval_start_from_datetimedatetime]]
-interval_start_from_date/time/datetime
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=== interval_start_from_date/time/datetime
 
 * Syntax:
 +
@@ -915,8 +884,7 @@ non-date/non-time/non-datetime value,
 ---------------------------------------------------------------------------------------------------
 
 [[overlap_bins]]
-overlap_bins
-^^^^^^^^^^^^
+=== overlap_bins
 
 * Return Value:
 ** a `interval` value representing the bin containing the `time_to_bin`
@@ -991,3 +959,4 @@ non-year_month_duration/non-day_time_duration value.
                    ]
 };
 ---------------------------------------------------------------------------------------------------------
+

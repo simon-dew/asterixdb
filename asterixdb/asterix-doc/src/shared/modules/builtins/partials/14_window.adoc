@@ -1,6 +1,5 @@
 [[window-functions]]
-Window Functions
-~~~~~~~~~~~~~~~~
+== Window Functions
 
 Window functions are used to compute an aggregate or cumulative value,
 based on a portion of the tuples selected by a query. For each input
@@ -21,8 +20,7 @@ described in the section on link:manual.html#SELECT_statements[SELECT
 Statements].
 
 [[cume_dist]]
-cume_dist
-^^^^^^^^^
+=== cume_dist
 
 * Syntax:
 +
@@ -101,8 +99,7 @@ FROM GleambookMessages AS m;
 --------------------
 
 [[dense_rank]]
-dense_rank
-^^^^^^^^^^
+=== dense_rank
 
 * Syntax:
 +
@@ -192,8 +189,7 @@ FROM GleambookMessages AS m;
 ----------------------
 
 [[first_value]]
-first_value
-^^^^^^^^^^^
+=== first_value
 
 * Syntax:
 +
@@ -301,8 +297,7 @@ FROM GleambookMessages AS m;
 ---------------------------
 
 [[lag]]
-lag
-^^^
+=== lag
 
 * Syntax:
 +
@@ -403,8 +398,7 @@ FROM GleambookMessages AS m;
 -------------------------------------------------
 
 [[last_value]]
-last_value
-^^^^^^^^^^
+=== last_value
 
 * Syntax:
 +
@@ -519,8 +513,7 @@ window frame would always be the current tuple. This would mean that the
 longest message would always be the same as the current message.
 
 [[lead]]
-lead
-^^^^
+=== lead
 
 * Syntax:
 +
@@ -621,8 +614,7 @@ FROM GleambookMessages AS m;
 -----------------------------------------------
 
 [[nth_value]]
-nth_value
-^^^^^^^^^
+=== nth_value
 
 * Syntax:
 +
@@ -820,8 +812,7 @@ messages.
 ➁ The second longest message from this author.
 
 [[ntile]]
-ntile
-^^^^^
+=== ntile
 
 * Syntax:
 +
@@ -904,8 +895,7 @@ FROM GleambookMessages AS m;
 -------------------
 
 [[percent_rank]]
-percent_rank
-^^^^^^^^^^^^
+=== percent_rank
 
 * Syntax:
 +
@@ -983,8 +973,7 @@ FROM GleambookMessages AS m;
 --------------------
 
 [[rank]]
-rank
-^^^^
+=== rank
 
 * Syntax:
 +
@@ -1076,8 +1065,7 @@ FROM GleambookMessages AS m;
 ----------------------
 
 [[ratio_to_report]]
-ratio_to_report
-^^^^^^^^^^^^^^^
+=== ratio_to_report
 
 * Syntax:
 +
@@ -1156,8 +1144,7 @@ FROM GleambookMessages AS m;
 ----------------------------------------
 
 [[row_number]]
-row_number
-^^^^^^^^^^
+=== row_number
 
 * Syntax:
 +
