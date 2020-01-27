@@ -51,9 +51,6 @@
             <phase>pre-site</phase>
             <configuration>
               <target>
-                <concat destfile="${project.build.directory}/generated-site/markdown/datamodel.md">
-                  <filelist dir="${project.basedir}/src/main/datamodel" files="datamodel_header.md,datamodel_primitive_common.md,datamodel_primitive_delta.md,datamodel_incomplete.md,datamodel_composite.md" />
-                </concat>
                 <concat destfile="${project.build.directory}/generated-site/markdown/ansible.md">
                   <filelist dir="${project.basedir}/src/main/installation/" files="ansible_title.md,ansible.md" />
                 </concat>
