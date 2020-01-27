@@ -18,7 +18,7 @@ under the License.
 ////
 
 = The Asterix Data Model (ADM)
-:includedir: ../shared/modules/datamodel/partials
+:includedir: ../../shared/modules/datamodel/partials
 :toc:
 :toclevels: 2
 
