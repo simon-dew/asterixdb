@@ -139,3 +139,4 @@ binary_concat([hex("42"), hex(""), hex('42')]);
 * The expected result is
 +
 hex("4242")
+

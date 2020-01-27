@@ -691,8 +691,7 @@ the interval) representing the starting or ending time,
 ----------------------------------------------------------
 
 [[get_interval_start_dateget_interval_start_datetimeget_interval_start_time-get_interval_end_dateget_interval_end_datetimeget_interval_end_time]]
-get_interval_start_date/get_interval_start_datetimeget_interval_start_time,
-=== get_interval_end_date/get_interval_end_datetime/get_interval_end_time
+=== get_interval_start_date/get_interval_start_datetime/get_interval_start_time, get_interval_end_date/get_interval_end_datetime/get_interval_end_time
 
 * Syntax:
 +
