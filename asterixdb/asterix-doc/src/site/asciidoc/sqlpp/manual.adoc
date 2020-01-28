@@ -3,6 +3,11 @@
 :toc:
 :toclevels: 1
 
+:aggregate-functions: xref:builtins.adoc#AggregateFunctions
+:window-functions: xref:builtins.adoc#WindowFunctions
+:over-clauses: xref:manual.adoc#Over_clauses
+:service-api: link:../api.html#queryservice
+
 include::{includedir}/1_intro.adoc[]
 include::{includedir}/2_expr_title.adoc[]
 include::{includedir}/2_expr.adoc[]

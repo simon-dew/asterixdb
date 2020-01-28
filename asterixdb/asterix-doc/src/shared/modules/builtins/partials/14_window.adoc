@@ -10,13 +10,13 @@ The tuples are not grouped into a single output tuple — each tuple
 remains separate in the query output.
 
 All window functions must be used with an OVER clause. Refer to
-link:manual.html#Over_clauses[OVER Clauses] for details.
+{over-clauses}[OVER Clauses] for details.
 
 Window functions cannot appear in the FROM clause clause or LIMIT
 clause.
 
 The examples in this section use the `GleambookMessages` dataset,
-described in the section on link:manual.html#SELECT_statements[SELECT
+described in the section on {select-statements}[SELECT
 Statements].
 
 [[cume_dist]]
@@ -38,9 +38,9 @@ window order clause is omitted, the function returns the same result
 * Arguments:
 ** None.
 * Clauses:
-** (Optional) link:manual.html#Window_partition_clause[Window Partition
+** (Optional) {window-partition-clause}[Window Partition
 Clause].
-** (Optional) link:manual.html#Window_order_clause[Window Order Clause].
+** (Optional) {window-order-clause}[Window Order Clause].
 * Return Value:
 ** A number greater than 0 and less than or equal to 1. The higher the
 value, the higher the ranking.
@@ -121,9 +121,9 @@ ranked 2, the next dense rank is 3.
 * Arguments:
 ** None.
 * Clauses:
-** (Optional) link:manual.html#Window_partition_clause[Window Partition
+** (Optional) {window-partition-clause}[Window Partition
 Clause].
-** (Optional) link:manual.html#Window_order_clause[Window Order Clause].
+** (Optional) {window-order-clause}[Window Order Clause].
 * Return Value:
 ** An integer, greater than or equal to 1.
 * Example:
@@ -200,9 +200,11 @@ FIRST_VALUE(expr) [nulls-treatment] OVER (window-definition)
 frame, where the window frame is specified by the window definition.
 * Arguments:
 ** `expr`: The value that you want to return from the first tuple in the
-window frame. [link:#fn_1[1]]
+window frame. footnote:fn_1[If the query contains the GROUP BY clause or any
+{aggregate-functions}[aggregate functions], this expression must only
+depend on GROUP BY expressions or aggregate functions.]
 * Modifiers:
-** link:manual.html#Nulls_treatment[Nulls Treatment]: (Optional)
+** {nulls-treatment}[Nulls Treatment]: (Optional)
 Determines how NULL or MISSING values are treated when finding the first
 value in the window frame.
 *** `IGNORE NULLS`: If the values for any tuples evaluate to NULL or
@@ -213,10 +215,10 @@ MISSING, those tuples are included when finding the first tuple.
 +
 If this modifier is omitted, the default is `RESPECT NULLS`.
 * Clauses:
-** (Optional) link:manual.html#Window_partition_clause[Window Partition
+** (Optional) {window-partition-clause}[Window Partition
 Clause].
-** (Optional) link:manual.html#Window_order_clause[Window Order Clause].
-** (Optional) link:manual.html#Window_frame_clause[Window Frame Clause].
+** (Optional) {window-order-clause}[Window Order Clause].
+** (Optional) {window-frame-clause}[Window Frame Clause].
 * Return Value:
 ** The specified value from the first tuple. The order of the tuples is
 determined by the window order clause.
@@ -311,13 +313,13 @@ The window order clause determines the sort order of the tuples. If the
 window order clause is omitted, the return values may be unpredictable.
 * Arguments:
 ** `expr`: The value that you want to return from the offset tuple.
-[link:#fn_1[1]]
+footnote:fn_1[]
 ** `offset`: (Optional) A positive integer. If omitted, the default is
 1.
 ** `default`: (Optional) The value to return when the offset goes out of
 partition scope. If omitted, the default is NULL.
 * Modifiers:
-** link:manual.html#Nulls_treatment[Nulls Treatment]: (Optional)
+** {nulls-treatment}[Nulls Treatment]: (Optional)
 Determines how NULL or MISSING values are treated when finding the
 offset tuple in the window partition.
 *** `IGNORE NULLS`: If the values for any tuples evaluate to NULL or
@@ -327,9 +329,9 @@ MISSING, those tuples are included when finding the offset tuple.
 +
 If this modifier is omitted, the default is `RESPECT NULLS`.
 * Clauses:
-** (Optional) link:manual.html#Window_partition_clause[Window Partition
+** (Optional) {window-partition-clause}[Window Partition
 Clause].
-** (Optional) link:manual.html#Window_order_clause[Window Order Clause].
+** (Optional) {window-order-clause}[Window Order Clause].
 * Return Value:
 ** The specified value from the offset tuple.
 ** If the offset tuple is out of partition scope, it returns the default
@@ -409,9 +411,9 @@ LAST_VALUE(expr) [nulls-treatment] OVER (window-definition)
 frame, where the window frame is specified by the window definition.
 * Arguments:
 ** `expr`: The value that you want to return from the last tuple in the
-window frame. [link:#fn_1[1]]
+window frame. footnote:fn_1[]
 * Modifiers:
-** link:manual.html#Nulls_treatment[Nulls Treatment]: (Optional)
+** {nulls-treatment}[Nulls Treatment]: (Optional)
 Determines how NULL or MISSING values are treated when finding the last
 tuple in the window frame.
 *** `IGNORE NULLS`: If the values for any tuples evaluate to NULL or
@@ -422,10 +424,10 @@ MISSING, those tuples are included when finding the last tuple.
 +
 If this modifier is omitted, the default is `RESPECT NULLS`.
 * Clauses:
-** (Optional) link:manual.html#Window_partition_clause[Window Partition
+** (Optional) {window-partition-clause}[Window Partition
 Clause].
-** (Optional) link:manual.html#Window_order_clause[Window Order Clause].
-** (Optional) link:manual.html#Window_frame_clause[Window Frame Clause].
+** (Optional) {window-order-clause}[Window Order Clause].
+** (Optional) {window-frame-clause}[Window Frame Clause].
 * Return Value:
 ** The specified value from the last tuple. The order of the tuples is
 determined by the window order clause.
@@ -527,13 +529,13 @@ The window order clause determines the sort order of the tuples. If the
 window order clause is omitted, the return values may be unpredictable.
 * Arguments:
 ** `expr`: The value that you want to return from the offset tuple.
-[link:#fn_1[1]]
+footnote:fn_1[]
 ** `offset`: (Optional) A positive integer. If omitted, the default is
 1.
 ** `default`: (Optional) The value to return when the offset goes out of
 window partition scope. If omitted, the default is NULL.
 * Modifiers:
-** link:manual.html#Nulls_treatment[Nulls Treatment]: (Optional)
+** {nulls-treatment}[Nulls Treatment]: (Optional)
 Determines how NULL or MISSING values are treated when finding the
 offset tuple in the window partition.
 *** `IGNORE NULLS`: If the values for any tuples evaluate to NULL or
@@ -543,9 +545,9 @@ MISSING, those tuples are included when finding the offset tuple.
 +
 If this modifier is omitted, the default is `RESPECT NULLS`.
 * Clauses:
-** (Optional) link:manual.html#Window_partition_clause[Window Partition
+** (Optional) {window-partition-clause}[Window Partition
 Clause].
-** (Optional) link:manual.html#Window_order_clause[Window Order Clause].
+** (Optional) {window-order-clause}[Window Order Clause].
 * Return Value:
 ** The specified value from the offset tuple.
 ** If the offset tuple is out of partition scope, it returns the default
@@ -625,11 +627,11 @@ NTH_VALUE(expr, offset) [nthval-from] [nulls-treatment] OVER (window-definition)
 where the window frame is specified by the window definition.
 * Arguments:
 ** `expr`: The value that you want to return from the offset tuple in
-the window frame. [link:#fn_1[1]]
+the window frame. footnote:fn_1[]
 ** `offset`: The number of the offset tuple within the window frame,
 counting from 1.
 * Modifiers:
-** link:manual.html#Nth_val_from[Nth Val From]: (Optional) Determines
+** {nth-val-from}[Nth Val From]: (Optional) Determines
 where the function starts counting the offset.
 *** `FROM FIRST`: Counting starts at the first tuple in the window
 frame. In this case, an offset of 1 is the first tuple in the window
@@ -640,7 +642,7 @@ the second-to-last tuple, and so on.
 +
 The order of the tuples is determined by the window order clause. If
 this modifier is omitted, the default is `FROM FIRST`.
-** link:manual.html#Nulls_treatment[Nulls Treatment]: (Optional)
+** {nulls-treatment}[Nulls Treatment]: (Optional)
 Determines how NULL or MISSING values are treated when finding the
 offset tuple in the window frame.
 *** `IGNORE NULLS`: If the values for any tuples evaluate to NULL or
@@ -650,10 +652,10 @@ MISSING, those tuples are included when finding the offset tuple.
 +
 If this modifier is omitted, the default is `RESPECT NULLS`.
 * Clauses:
-** (Optional) link:manual.html#Window_partition_clause[Window Partition
+** (Optional) {window-partition-clause}[Window Partition
 Clause].
-** (Optional) link:manual.html#Window_order_clause[Window Order Clause].
-** (Optional) link:manual.html#Window_frame_clause[Window Frame Clause].
+** (Optional) {window-order-clause}[Window Order Clause].
+** (Optional) {window-frame-clause}[Window Frame Clause].
 * Return Value:
 ** The specified value from the offset tuple.
 ** In the following cases, this function may return unpredictable
@@ -835,9 +837,9 @@ undefined order.
 window partition. This argument can be an expression and must evaluate
 to a number. If the number is not an integer, it will be truncated.
 * Clauses:
-** (Optional) link:manual.html#Window_partition_clause[Window Partition
+** (Optional) {window-partition-clause}[Window Partition
 Clause].
-** (Optional) link:manual.html#Window_order_clause[Window Order Clause].
+** (Optional) {window-order-clause}[Window Order Clause].
 * Return Value:
 ** An value greater than or equal to 1 and less than or equal to the
 number of tiles.
@@ -912,9 +914,9 @@ for each tuple.
 * Arguments:
 ** None.
 * Clauses:
-** (Optional) link:manual.html#Window_partition_clause[Window Partition
+** (Optional) {window-partition-clause}[Window Partition
 Clause].
-** (Optional) link:manual.html#Window_order_clause[Window Order Clause].
+** (Optional) {window-order-clause}[Window Order Clause].
 * Return Value:
 ** A number between 0 and 1. The higher the value, the higher the
 ranking.
@@ -998,9 +1000,9 @@ instead.
 * Arguments:
 ** None.
 * Clauses:
-** (Optional) link:manual.html#Window_partition_clause[Window Partition
+** (Optional) {window-partition-clause}[Window Partition
 Clause].
-** (Optional) link:manual.html#Window_order_clause[Window Order Clause].
+** (Optional) {window-order-clause}[Window Order Clause].
 * Return Value:
 ** An integer, greater than or equal to 1.
 * Example:
@@ -1076,12 +1078,12 @@ RATIO_TO_REPORT(expr) OVER (window-definition)
 the sum of values for all tuples in the window frame.
 * Arguments:
 ** `expr`: The value for which you want to calculate the fractional
-ratio. [link:#fn_1[1]]
+ratio. footnote:fn_1[]
 * Clauses:
-** (Optional) link:manual.html#Window_partition_clause[Window Partition
+** (Optional) {window-partition-clause}[Window Partition
 Clause].
-** (Optional) link:manual.html#Window_order_clause[Window Order Clause].
-** (Optional) link:manual.html#Window_frame_clause[Window Frame Clause].
+** (Optional) {window-order-clause}[Window Order Clause].
+** (Optional) {window-frame-clause}[Window Frame Clause].
 * Return Value:
 ** A number between 0 and 1, representing the fractional ratio of the
 value for the current tuple to the sum of values for all tuples in the
@@ -1159,9 +1161,9 @@ window order clause is omitted, the return values may be unpredictable.
 * Arguments:
 ** None.
 * Clauses:
-** (Optional) link:manual.html#Window_partition_clause[Window Partition
+** (Optional) {window-partition-clause}[Window Partition
 Clause].
-** (Optional) link:manual.html#Window_order_clause[Window Order Clause].
+** (Optional) {window-order-clause}[Window Order Clause].
 * Return Value:
 ** An integer, greater than or equal to 1.
 * Example:
@@ -1218,8 +1220,3 @@ FROM GleambookMessages AS m;
 ]
 --------------------
 
-'''''
-
-\1. If the query contains the GROUP BY clause or any
-link:#AggregateFunctions[aggregate functions], this expression must only
-depend on GROUP BY expressions or aggregate functions.

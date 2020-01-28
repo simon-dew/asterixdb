@@ -52,9 +52,11 @@ contains(string, substring_to_contain)
 `missing` value,
 ** any other non-string input value will cause a type error,
 ** `false` otherwise.
+ifeval::[{n_gram} == true]
 * Note: an
 link:similarity.html#UsingIndexesToSupportSimilarityQueries[n_gram
 index] can be utilized for this function.
+endif::[]
 * Example:
 +
 ------------------------------------------------------------------------------
@@ -122,13 +124,15 @@ alias called "title".
 ** any other non-string input value will cause a type error.
 * Example:
 +
+[subs=normal]
 ---------------------------------------------------------------------------
-{ "v1": initcap("ASTERIXDB is here!"), "v2": title("ASTERIXDB is here!") };
+{ "v1": initcap("{upper-name} is here!"), "v2": title("{upper-name} is here!") };
 ---------------------------------------------------------------------------
 * The expected result is:
 +
+[subs=normal]
 ----------------------------------------------------------
-{ "v1": "Asterixdb Is Here!", "v2": "Asterixdb Is Here!" }
+{ "v1": "{title-name} Is Here!", "v2": "{title-name} Is Here!" }
 ----------------------------------------------------------
 
 [[length]]
@@ -177,13 +181,15 @@ lower(string)
 ** any other non-string input value will cause a type error.
 * Example:
 +
+[subs=normal]
 -------------------
-lower("ASTERIXDB");
+lower("{upper-name}");
 -------------------
 * The expected result is:
 +
+[subs=normal]
 -----------
-"asterixdb"
+"{lower-name}"
 -----------
 
 [[ltrim]]

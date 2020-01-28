@@ -9,18 +9,18 @@ The query language also supports standard SQL aggregate functions (e.g.,
 functions in the query language, but just syntactic sugars over
 corresponding builtin aggregate functions (e.g., `ARRAY_MIN`,
 `ARRAY_MAX`, `ARRAY_SUM`, `ARRAY_COUNT`, and `ARRAY_AVG`). Refer to
-link:manual.html#SQL-92_aggregation_functions[SQL-92 Aggregation
+{sql-92-aggregation-functions}[SQL-92 Aggregation
 Functions] for details.
 
 The `DISTINCT` keyword may be used with built-in aggregate functions and
 standard SQL aggregate functions. It may also be used with aggregate
 functions used as window functions. It determines whether the function
 aggregates all values in the group, or distinct values only. Refer to
-link:manual.html#Aggregation_functions[Aggregation Functions] for
+{aggregation-functions}[Aggregation Functions] for
 details.
 
 Aggregate functions may be used as window functions when they are used
-with an OVER clause. Refer to link:manual.html#Over_clauses[OVER
+with an OVER clause. Refer to {over-clauses}[OVER
 Clauses] for details.
 
 [[array_count]]

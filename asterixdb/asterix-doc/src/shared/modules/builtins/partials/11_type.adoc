@@ -49,7 +49,7 @@ The function has an alias `isarray`.
 is_atomic(expr)
 ---------------
 * Checks whether the given expression is evaluated to be a value of a
-link:../datamodel.html#PrimitiveTypes[primitive] type.
+{primitive-types}[primitive] type.
 * Arguments:
 ** `expr` : an expression (any type is allowed).
 * Return Value:
@@ -361,7 +361,7 @@ The function has an alias `toarray`.
 to_atomic(expr)
 ---------------
 * Converts input value to a
-link:../datamodel.html#PrimitiveTypes[primitive] value
+{primitive-types}[primitive] value
 * Arguments:
 ** `expr` : an expression
 * Return Value:

@@ -29,13 +29,13 @@ OperatorExpression ::= PathExpression
 The language provides a full set of operators that you can use within
 its statements. Here are the categories of operators:
 
-* link:#Arithmetic_operators[Arithmetic Operators], to perform basic
+* <<Arithmetic_operators>>, to perform basic
 mathematical operations;
-* link:#Collection_operators[Collection Operators], to evaluate
+* <<Collection_operators>>, to evaluate
 expressions on collections or objects;
-* link:#Comparison_operators[Comparison Operators], to compare two
+* <<Comparison_operators>>, to compare two
 expressions;
-* link:#Logical_operators[Logical Operators], to combine operators using
+* <<Logical_operators>>, to combine operators using
 Boolean logic.
 
 The following table summarizes the precedence order (from higher to
@@ -61,10 +61,10 @@ In general, if any operand evaluates to a `MISSING` value, the enclosing
 operator will return `MISSING`; if none of operands evaluates to a
 `MISSING` value but there is an operand evaluates to a `NULL` value, the
 enclosing operator will return `NULL`. However, there are a few
-exceptions listed in link:#Comparison_operators[comparison operators]
-and link:#Logical_operators[logical operators].
+exceptions listed in <<Comparison_operators>>
+and <<Logical_operators>>.
 
-[[arithmetic-operators]]
+[[Arithmetic_operators]]
 ==== Arithmetic Operators
 
 Arithmetic operators are used to exponentiate, add, subtract, multiply,
@@ -93,7 +93,7 @@ integers) |SELECT VALUE 5 / 2;
 ||| |String concatenation |SELECT VALUE "ab"||"c"||"d";
 |=======================================================================
 
-[[collection-operators]]
+[[Collection_operators]]
 ==== Collection Operators
 
 Collection operators are used for membership tests (IN, NOT IN) or empty
@@ -115,7 +115,7 @@ ChirpMessages cm WHERE EXISTS cm.referredTopics;
 ChirpMessages cm WHERE NOT EXISTS cm.referredTopics;
 |=======================================================================
 
-[[comparison-operators]]
+[[Comparison_operators]]
 ==== Comparison Operators
 
 Comparison operators are used to compare values. The comparison
@@ -217,7 +217,7 @@ operators work.
 |IS NOT KNOWN (IS NOT VALUED) |FALSE |TRUE |TRUE
 |===================================================
 
-[[logical-operators]]
+[[Logical_operators]]
 ==== Logical Operators
 
 Logical operators perform logical `NOT`, `AND`, and `OR` operations over
@@ -494,7 +494,7 @@ PositionalParameterReference    ::= ("$" <DIGITS>) | "?"
 ------------------------------------------------------------------------------------------
 
 A statement parameter is an external variable which value is provided
-through the link:../api.html#queryservice[statement execution API]. An
+through the {service-api}[statement execution API]. An
 error will be raised if the parameter is not bound at the query
 execution time. Positional parameter numbering starts at 1. "?"
 parameters are interpreted as latexmath:[$1, .. $]N in the order in
@@ -545,7 +545,7 @@ bindings can themselves be any expressions in the query language.
 
 Note that Window functions, and aggregate functions used as window
 functions, have a more complex syntax. Window function calls are
-described in the section on link:#Over_clauses[OVER Clauses].
+described in the section on {over-clauses}[OVER Clauses].
 
 The following example is a (built-in) function call expression whose
 value is 8.
