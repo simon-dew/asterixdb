@@ -1,4 +1,4 @@
-[[window-functions]]
+[[WindowFunctions]]
 == Window Functions
 
 Window functions are used to compute an aggregate or cumulative value,

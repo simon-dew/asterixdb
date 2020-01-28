@@ -1,4 +1,4 @@
-[[aggregate-functions-array-functions]]
+[[AggregateFunctions]]
 == Aggregate Functions (Array Functions)
 
 This section contains detailed descriptions of the built-in aggregate
